@@ -56,11 +56,11 @@ body {
 }
 
 .download-button {
-    font-size: 8px; /* Diminui ainda mais o tamanho do texto */
-    padding: 3px 5px; /* Reduz o padding para diminuir a altura */
+    font-size: 1px; /* Diminui ainda mais o tamanho do texto */
+    padding: 1px 1px; /* Reduz o padding para diminuir a altura */
     width: auto;
     height: auto;
-    bottom: 5px; /* Ajusta para mais próximo do canto inferior */
-    left: 5px; /* Ajusta para mais próximo do canto esquerdo */
+    bottom: 1px; /* Ajusta para mais próximo do canto inferior */
+    left: 1px; /* Ajusta para mais próximo do canto esquerdo */
     position: absolute;
 }
