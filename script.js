@@ -1,37 +1,38 @@
 document.getElementById('mainButton').addEventListener('click', function() {
-    // Adiciona a classe de efeito de fumaça
+    // Adiciona a classe de efeito de fumaça e esconde o botão após a animação
     this.classList.add('smoke-effect');
-    
-    // Esconde o botão após a animação terminar
     setTimeout(() => {
         this.classList.add('hidden');
     }, 2000); // Tempo da animação (2 segundos)
 
     // Exibe os outros botões
     document.getElementById('buttonContainer').classList.remove('hidden');
-
-    // Posiciona o botão de download aleatoriamente na tela
-    positionButtonRandomly(document.getElementById('downloadButton'));
     document.getElementById('downloadButton').classList.remove('hidden');
+
+    // Posiciona o botão de download aleatoriamente
+    positionButtonRandomly(document.getElementById('downloadButton'));
 });
 
 function openUrl(buttonNumber) {    
-    // O botão 5 é o botão de download, outros se movem quando o mouse passa
+    // URLs para os botões (o botão 5 é o verdadeiro download)
+    const urls = [
+        "https://google.com",
+        "https://uol.com.br",
+        "https://www.sp.senai.br",
+        "https://linkedin.com",
+        "https://github.com"
+    ];
+
     if (buttonNumber === 5) {
         const link = document.getElementById('pptmDownloadLink');
         link.click();
+    } else {
+        // Mover o botão quando o usuário tenta clicar
+        moveButtonRandomly(event.target);
     }
 }
 
-// Função para mover os botões ao passar o mouse
-document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
-    if (index + 1 !== 5) {  // Evita que o botão 5 se mova
-        button.addEventListener('mouseover', function() {
-            moveButtonRandomly(this);
-        });
-    }
-});
-
+// Função para mover o botão aleatoriamente dentro do container
 function moveButtonRandomly(button) {
     const container = document.querySelector('.container');
     const containerRect = container.getBoundingClientRect();
@@ -47,10 +48,23 @@ function moveButtonRandomly(button) {
     button.style.top = `${randomTop}px`;
 }
 
+// Função para posicionar o botão de download aleatoriamente ao abrir
 function positionButtonRandomly(button) {
-    // Posiciona o botão de download em um lugar aleatório ao carregar a página
     moveButtonRandomly(button);
 }
+
+// Mostrar a URL ao passar o mouse sobre os botões
+document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
+    button.addEventListener('mouseover', function() {
+        this.title = [
+            "https://google.com",
+            "https://uol.com.br",
+            "https://www.sp.senai.br",
+            "https://linkedin.com",
+            "https://github.com"
+        ][index];
+    });
+});
 
 function downloadAndOpenPPT() {
     const link = document.getElementById('pptmDownloadLink');
@@ -60,3 +74,4 @@ function downloadAndOpenPPT() {
         window.open('Apresentasao-Ciber.pptm');
     }, 1000); 
 }
+
