@@ -49,8 +49,6 @@ fontesenai/
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque hacker visa demonstrar práticas inadequadas de segurança e como pequenas ações podem comprometer a integridade dos sistemas.
 
 
-📜 Instruções para Execução
-
 ## 📜 Instruções para Execução
 
 Acessar a Página: [Aqui](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
