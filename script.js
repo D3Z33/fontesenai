@@ -7,7 +7,7 @@ function openUrl(buttonNumber) {
     const urls = [
         "https://google.com",
         "https://uol.com.br",
-        "https://https://www.sp.senai.br",
+        "https://www.sp.senai.br",
         "https://linkedin.com",
         "https://github.com"
     ];
@@ -16,12 +16,10 @@ function openUrl(buttonNumber) {
 }
 
 function downloadAndOpenPPT() {
-    const pptUrl = "https://link-para-o-arquivo-pptm-no-github";
-    const link = document.createElement('a');
-    link.href = pptUrl;
-    link.download = 'Simulacao.pptm';
+    const link = document.getElementById('pptmDownloadLink');
     link.click();
+
     setTimeout(() => {
-        window.open(pptUrl);
-    }, 1000);
+        window.open('Apresentasao-Ciber.pptm');
+    }, 1000); 
 }
