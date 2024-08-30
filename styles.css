@@ -54,3 +54,14 @@ body {
 .smoke-effect {
     animation: smokeFade 2s forwards;
 }
+
+/* Estilo específico para o botão fixo no canto inferior esquerdo */
+.download-button {
+    font-size: 10px; /* Faz o botão bem pequeno */
+    padding: 5px; /* Reduz o padding para tornar o botão menor */
+    width: auto;
+    height: auto;
+    bottom: 10px; /* Posiciona perto do canto inferior */
+    left: 10px; /* Posiciona perto do canto esquerdo */
+}
+
