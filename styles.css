@@ -69,16 +69,16 @@ body {
 }
 
 .download-button {
-    font-size: 0,5px;
-    padding: 0,5px 0,5px;
-    width: 0,5px;
-    height: 0,5px;
-    bottom: 0,5px;
-    left: 0,5px;
+    font-size: 1px;
+    padding: 1px 1px;
+    width: 1px;
+    height: 1px;
+    bottom: 1px;
+    left: 1px;
     position: absolute;
     background: linear-gradient(135deg, #004d00, #00b300);
-    border-radius: 0,5px;
-    border: 0,5px solid #00ff00;
+    border-radius: 1px;
+    border: 1px solid #00ff00;
     box-shadow: 0 0 10px #00ff00;
     transition: transform 0.3s ease, background 0.3s ease;
 }
