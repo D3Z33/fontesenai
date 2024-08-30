@@ -23,6 +23,7 @@ body {
     cursor: pointer;
     border-radius: 50px;
     transition: transform 0.3s, background 0.3s;
+    position: relative;
 }
 
 .creative-button:hover {
@@ -51,3 +52,14 @@ body {
     animation: smokeFade 2s forwards;
 }
 
+@keyframes moveButton {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(30px, -30px); }
+    50% { transform: translate(-30px, 30px); }
+    75% { transform: translate(30px, 30px); }
+    100% { transform: translate(-30px, -30px); }
+}
+
+.moving-button {
+    animation: moveButton 0.5s ease-in-out;
+}

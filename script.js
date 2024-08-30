@@ -13,22 +13,34 @@ document.getElementById('mainButton').addEventListener('click', function() {
 });
 
 function openUrl(buttonNumber) {    
-    const urls = [
-        "https://google.com",
-        "https://uol.com.br",
-        "https://www.sp.senai.br",
-        "https://linkedin.com",
-        "https://github.com"
-    ];
+    if (buttonNumber === 5) {
+        // Se for o botão 5, faz o download do arquivo
+        const link = document.getElementById('pptmDownloadLink');
+        link.click();
+    } else {
+        // Todos os outros botões se movem quando o mouse passa
+        const button = document.getElementById(`button${buttonNumber}`);
+        button.classList.add('moving-button');
 
-    window.open(urls[buttonNumber - 1], '_blank');
+        // Remove a classe de movimento após a animação para permitir movimentos repetidos
+        setTimeout(() => {
+            button.classList.remove('moving-button');
+        }, 500);
+    }
 }
 
-// Mostrar a URL ao passar o mouse sobre os botões
+// Adiciona o comportamento de movimento para todos os botões exceto o 5
 document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
     button.addEventListener('mouseover', function() {
-        this.title = urls[index];
+        if (index + 1 !== 5) {  // Evita que o botão 5 se mova
+            this.classList.add('moving-button');
+        }
     });
+});
+
+// Mostrar a URL ao passar o mouse sobre os botões (opcional)
+document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
+    button.title = "Download Aqui";
 });
 
 function downloadAndOpenPPT() {
