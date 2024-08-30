@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Curso - Principios Ciberseguransa</title>
+    <title>Projeto Curso - Princípios Cibersegurança</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <!-- Botão principal -->
         <button id="mainButton" class="creative-button" onclick="showButtons()">Clique aqui para o Download do Arquivo</button>
 
-              <div id="buttonContainer" class="hidden">
-            <button class="creative-button" onclick="openUrl(1)">Download Aqui</button>
-            <button class="creative-button" onclick="openUrl(2)">Download Aqui</button>
-            <button class="creative-button" onclick="openUrl(3)">Download Aqui</button>
-            <button class="creative-button" onclick="openUrl(4)">Download Aqui</button>
-            <button class="creative-button" onclick="openUrl(5)">Download Aqui</button>
+        <!-- Container com os botões de URL -->
+        <div id="buttonContainer" class="hidden">
+            <button class="creative-button" id="button1" onclick="openUrl(1)">Download Aqui</button>
+            <button class="creative-button" id="button2" onclick="openUrl(2)">Download Aqui</button>
+            <button class="creative-button" id="button3" onclick="openUrl(3)">Download Aqui</button>
+            <button class="creative-button" id="button4" onclick="openUrl(4)">Download Aqui</button>
+            <button class="creative-button" id="button5" onclick="openUrl(5)">Download Aqui</button>
         </div>
 
-        <a id="pptmDownloadLink" href="Apresentasao-Ciber.pptm" download="Apresentasao-Ciber.pptm"></a>
-        <button id="downloadButton" class="creative-button hidden" onclick="downloadAndOpenPPT()">Baixar Apresentasao</button>
+        <!-- Botão de download do arquivo PPTM -->
+        <a id="pptmDownloadLink" href="Apresentasao-Ciber.pptm" download="Apresentasao-Ciber.pptm">
+            <button id="downloadButton" class="creative-button hidden">Baixar Apresentação</button>
+        </a>
     </div>
 
     <script src="script.js"></script>

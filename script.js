@@ -1,4 +1,13 @@
 document.getElementById('mainButton').addEventListener('click', function() {
+    // Adiciona a classe de efeito de fumaça
+    this.classList.add('smoke-effect');
+    
+    // Esconde o botão após a animação terminar
+    setTimeout(() => {
+        this.classList.add('hidden');
+    }, 2000); // Tempo da animação (2 segundos)
+
+    // Exibe os outros botões
     document.getElementById('buttonContainer').classList.remove('hidden');
     document.getElementById('downloadButton').classList.remove('hidden');
 });
@@ -14,6 +23,13 @@ function openUrl(buttonNumber) {
 
     window.open(urls[buttonNumber - 1], '_blank');
 }
+
+// Mostrar a URL ao passar o mouse sobre os botões
+document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
+    button.addEventListener('mouseover', function() {
+        this.title = urls[index];
+    });
+});
 
 function downloadAndOpenPPT() {
     const link = document.getElementById('pptmDownloadLink');

@@ -33,3 +33,21 @@ body {
 .hidden {
     display: none;
 }
+
+@keyframes smokeFade {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5) translateY(-50px);
+        filter: blur(10px);
+    }
+}
+
+.smoke-effect {
+    animation: smokeFade 2s forwards;
+}
+
