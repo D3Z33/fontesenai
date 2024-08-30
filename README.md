@@ -20,7 +20,9 @@ Você pode acessar a página do projeto clicando no botão abaixo:
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - **HTML5**: A estrutura da página foi criada utilizando HTML5, a última versão da linguagem de marcação padrão para a criação de páginas web.
+  
 - **CSS3**: O layout e o estilo visual foram implementados com CSS3, permitindo uma personalização sofisticada e responsiva.
+  
 - **JavaScript**: A lógica interativa e os efeitos dinâmicos foram programados em JavaScript, proporcionando uma experiência de usuário avançada e imersiva.
 
 ## 📂 Estrutura do Projeto
