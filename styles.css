@@ -1,14 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #0d0d0d;
-    background: radial-gradient(circle, #0f0f0f, #000000);
+    background: #0b0b0b;
+    background: radial-gradient(circle, #1a1a1a, #000000);
     overflow: hidden;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
 }
 
 .container {
@@ -16,28 +18,33 @@ body {
     text-align: center;
     width: 80%;
     height: 80vh;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .creative-button {
     padding: 15px 30px;
     margin: 10px;
-    border: none;
+    border: 2px solid #00ff00;
     font-size: 16px;
-    color: #0f0;
-    background: linear-gradient(135deg, #005c00, #00ff00);
+    color: #00ff00;
+    background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 5px;
     position: absolute;
     transition: transform 0.2s ease, background 0.3s ease, left 0.3s, top 0.3s;
-    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 15px #00ff00, inset 0 0 10px #00ff00;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #00ff00;
 }
 
 .creative-button:hover {
-    background: linear-gradient(135deg, #00ff00, #005c00);
+    background: linear-gradient(135deg, #1f1f1f, #0a0a0a);
     transform: scale(1.1);
-    box-shadow: 0 15px 45px rgba(0, 255, 0, 0.7);
+    box-shadow: 0 0 20px #00ff00, inset 0 0 15px #00ff00;
 }
 
 .hidden {
@@ -62,21 +69,24 @@ body {
 }
 
 .download-button {
-    font-size: 10px;
-    padding: 5px 10px;
+    font-size: 8px;
+    padding: 2px 5px;
     width: auto;
     height: auto;
-    bottom: 10px;
-    left: 10px;
+    bottom: 5px;
+    left: 5px;
     position: absolute;
     background: linear-gradient(135deg, #004d00, #00b300);
-    border-radius: 30px;
+    border-radius: 3px;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .download-button:hover {
     transform: scale(1.2);
     background: linear-gradient(135deg, #00b300, #004d00);
+    box-shadow: 0 0 20px #00ff00, inset 0 0 10px #00ff00;
 }
 
 .container::before {
@@ -86,17 +96,36 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 255, 0, 0.05);
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0, 255, 0, 0.1) 0px,
+        rgba(0, 255, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 10px
+    );
     pointer-events: none;
-    animation: movingBackground 10s linear infinite;
     z-index: 0;
+    animation: scanlines 2s infinite linear;
 }
 
-@keyframes movingBackground {
-    0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(-100%) scale(1.5); }
+@keyframes scanlines {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
 }
 
 .creative-button, .download-button {
     z-index: 1;
+}
+
+@keyframes buttonGlitch {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0, 0); }
+}
+
+.fake-button:hover {
+    animation: buttonGlitch 0.3s infinite;
 }
