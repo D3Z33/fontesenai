@@ -25,11 +25,11 @@ function openUrl(buttonNumber) {
 
 // Função para mover os botões ao passar o mouse
 document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
-    button.addEventListener('mouseover', function() {
-        if (index + 1 !== 5) {  // Evita que o botão 5 se mova
+    if (index + 1 !== 5) {  // Evita que o botão 5 se mova
+        button.addEventListener('mouseover', function() {
             moveButtonRandomly(this);
-        }
-    });
+        });
+    }
 });
 
 function moveButtonRandomly(button) {

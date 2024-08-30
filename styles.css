@@ -11,7 +11,10 @@ body {
 }
 
 .container {
+    position: relative; /* Permite o posicionamento absoluto dos botões */
     text-align: center;
+    width: 80%; /* Ajusta o tamanho do container para limitar o movimento */
+    height: 80vh;
 }
 
 .creative-button {
@@ -23,8 +26,8 @@ body {
     background: linear-gradient(135deg, #f39c12, #e74c3c);
     cursor: pointer;
     border-radius: 50px;
-    position: absolute; /* Permite o posicionamento aleatório */
-    transition: transform 0.1s, background 0.3s;
+    position: absolute; /* Permite o movimento e posicionamento aleatório */
+    transition: transform 0.1s, background 0.3s, left 0.3s, top 0.3s; /* Suaviza o movimento */
 }
 
 .creative-button:hover {
@@ -50,8 +53,4 @@ body {
 
 .smoke-effect {
     animation: smokeFade 2s forwards;
-}
-
-.moving-button {
-    transform: translate(calc(100px - 50%), calc(100px - 50%)); /* Movimenta o botão */
 }
