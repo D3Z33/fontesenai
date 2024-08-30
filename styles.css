@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     background: radial-gradient(circle, #2c3e50, #000000);
+    overflow: hidden; /* Impede que os botões saiam da tela */
 }
 
 .container {
@@ -22,12 +23,11 @@ body {
     background: linear-gradient(135deg, #f39c12, #e74c3c);
     cursor: pointer;
     border-radius: 50px;
-    transition: transform 0.3s, background 0.3s;
-    position: relative;
+    position: absolute; /* Permite o posicionamento aleatório */
+    transition: transform 0.1s, background 0.3s;
 }
 
 .creative-button:hover {
-    transform: scale(1.1);
     background: linear-gradient(135deg, #e74c3c, #f39c12);
 }
 
@@ -52,14 +52,6 @@ body {
     animation: smokeFade 2s forwards;
 }
 
-@keyframes moveButton {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(30px, -30px); }
-    50% { transform: translate(-30px, 30px); }
-    75% { transform: translate(30px, 30px); }
-    100% { transform: translate(-30px, -30px); }
-}
-
 .moving-button {
-    animation: moveButton 0.5s ease-in-out;
+    transform: translate(calc(100px - 50%), calc(100px - 50%)); /* Movimenta o botão */
 }

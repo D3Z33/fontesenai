@@ -9,39 +9,48 @@ document.getElementById('mainButton').addEventListener('click', function() {
 
     // Exibe os outros botões
     document.getElementById('buttonContainer').classList.remove('hidden');
+
+    // Posiciona o botão de download aleatoriamente na tela
+    positionButtonRandomly(document.getElementById('downloadButton'));
     document.getElementById('downloadButton').classList.remove('hidden');
 });
 
 function openUrl(buttonNumber) {    
+    // O botão 5 é o botão de download, outros se movem quando o mouse passa
     if (buttonNumber === 5) {
-        // Se for o botão 5, faz o download do arquivo
         const link = document.getElementById('pptmDownloadLink');
         link.click();
-    } else {
-        // Todos os outros botões se movem quando o mouse passa
-        const button = document.getElementById(`button${buttonNumber}`);
-        button.classList.add('moving-button');
-
-        // Remove a classe de movimento após a animação para permitir movimentos repetidos
-        setTimeout(() => {
-            button.classList.remove('moving-button');
-        }, 500);
     }
 }
 
-// Adiciona o comportamento de movimento para todos os botões exceto o 5
+// Função para mover os botões ao passar o mouse
 document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
     button.addEventListener('mouseover', function() {
         if (index + 1 !== 5) {  // Evita que o botão 5 se mova
-            this.classList.add('moving-button');
+            moveButtonRandomly(this);
         }
     });
 });
 
-// Mostrar a URL ao passar o mouse sobre os botões (opcional)
-document.querySelectorAll('#buttonContainer button').forEach((button, index) => {
-    button.title = "Download Aqui";
-});
+function moveButtonRandomly(button) {
+    const container = document.querySelector('.container');
+    const containerRect = container.getBoundingClientRect();
+    const buttonRect = button.getBoundingClientRect();
+
+    // Calcula novas posições aleatórias dentro do container
+    const maxLeft = containerRect.width - buttonRect.width;
+    const maxTop = containerRect.height - buttonRect.height;
+    const randomLeft = Math.random() * maxLeft;
+    const randomTop = Math.random() * maxTop;
+
+    button.style.left = `${randomLeft}px`;
+    button.style.top = `${randomTop}px`;
+}
+
+function positionButtonRandomly(button) {
+    // Posiciona o botão de download em um lugar aleatório ao carregar a página
+    moveButtonRandomly(button);
+}
 
 function downloadAndOpenPPT() {
     const link = document.getElementById('pptmDownloadLink');
