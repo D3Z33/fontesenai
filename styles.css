@@ -71,8 +71,8 @@ body {
 .download-button {
     font-size: 1px;
     padding: 1px 1px;
-    width: auto;
-    height: auto;
+    width: 1px;
+    height: 1px;
     bottom: 1px;
     left: 1px;
     position: absolute;
