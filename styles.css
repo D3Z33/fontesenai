@@ -7,13 +7,13 @@ body {
     align-items: center;
     height: 100vh;
     background: radial-gradient(circle, #2c3e50, #000000);
-    overflow: hidden; /* Evita que os botões saiam da tela */
+    overflow: hidden;
 }
 
 .container {
-    position: relative; /* Permite o posicionamento absoluto dos botões */
+    position: relative;
     text-align: center;
-    width: 80%; /* Ajusta o tamanho do container para limitar o movimento */
+    width: 80%;
     height: 80vh;
 }
 
@@ -26,8 +26,8 @@ body {
     background: linear-gradient(135deg, #f39c12, #e74c3c);
     cursor: pointer;
     border-radius: 50px;
-    position: absolute; /* Permite o movimento e posicionamento aleatório */
-    transition: transform 0.1s, background 0.3s, left 0.3s, top 0.3s; /* Suaviza o movimento */
+    position: absolute;
+    transition: transform 0.1s, background 0.3s, left 0.3s, top 0.3s;
 }
 
 .creative-button:hover {
@@ -56,11 +56,11 @@ body {
 }
 
 .download-button {
-    font-size: 1px; /* Diminui ainda mais o tamanho do texto */
-    padding: 1px 1px; /* Reduz o padding para diminuir a altura */
+    font-size: 1px;
+    padding: 1px 1px;
     width: 1px;
     height: 1px;
-    bottom: 1px; /* Ajusta para mais próximo do canto inferior */
-    left: 1px; /* Ajusta para mais próximo do canto esquerdo */
+    bottom: 1px;
+    left: 1px;
     position: absolute;
 }
