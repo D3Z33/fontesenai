@@ -41,31 +41,30 @@ fontesenai/
     ├── 4.jpeg
     ├── 5.jpeg
     └── Apresentasao-Ciber.pptm  # Arquivo PowerPoint usado na simulação
+
 🎯 Objetivo do Projeto
+
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque hacker visa demonstrar práticas inadequadas de segurança e como pequenas ações podem comprometer a integridade dos sistemas.
 
+
 📜 Instruções para Execução
+
 Acessar a Página: Clique aqui para abrir a página do projeto.
+
 Interagir com os Botões: Explore a página clicando nos botões disponíveis. Somente um deles permite o download do arquivo de simulação.
+
 Download e Execução: Após identificar o botão correto, faça o download do arquivo .pptm e execute-o em seu PowerPoint. Siga as instruções na apresentação para iniciar a simulação.
-🤝 Contribuições
-Contribuições são bem-vindas! Se você deseja melhorar este projeto ou adicionar novas funcionalidades, sinta-se à vontade para fazer um fork e enviar um pull request.
 
-📧 Contato
-Se você tiver dúvidas ou sugestões, entre em contato através do e-mail: seuemail@example.com
 
-⌨️ com ❤️ por [Seu Nome] 🧑‍💻
 
-markdown
-Copiar código
+⌨️ com ❤️ por [D3Z33] 🧑‍💻
 
 ### Explicações:
 
 - **Ícones de Tecnologias**: Usei ícones para HTML5, CSS3, e JavaScript, que são as tecnologias principais usadas neste projeto.
-- **Botão de Acesso**: Um botão grande e claro que leva diretamente à página do projeto.
-- **Estrutura do Projeto**: Descrição da estrutura de diretórios para facilitar a compreensão do projeto.
-- **Objetivo e Instruções**: Uma seção clara sobre o propósito do projeto e como utilizá-lo.
 
-### Como Usar:
-- Coloque esse conteúdo no arquivo `README.md` na raiz do repositório do GitHub.
-- Atualize os detalhes de contato e qualquer informação adicional que seja específica para o seu projeto.
+- **Botão de Acesso**: Um botão grande e claro que leva diretamente à página do projeto.
+
+- **Estrutura do Projeto**: Descrição da estrutura de diretórios para facilitar a compreensão do projeto.
+
+- **Objetivo e Instruções**: Uma seção clara sobre o propósito do projeto e como utilizá-lo.
