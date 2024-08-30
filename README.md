@@ -49,14 +49,13 @@ fontesenai/
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque hacker visa demonstrar práticas inadequadas de segurança e como pequenas ações podem comprometer a integridade dos sistemas.
 
 
-## 📜 Instruções para Execução
+📜 Instruções para Execução
 
 Acessar a Página: [Aqui](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
 
 Interagir com os Botões: Explore a página clicando nos botões disponíveis. Somente um deles permite o download do arquivo de simulação.
 
 Download e Execução: Após identificar o botão correto, faça o download do arquivo .pptm e execute-o em seu PowerPoint. Siga as instruções na apresentação para iniciar a simulação.
-
 
 
 ⌨️ com ❤️ por [D3Z33] 🧑‍💻
