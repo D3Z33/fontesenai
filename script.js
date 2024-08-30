@@ -3,13 +3,13 @@ document.getElementById('mainButton').addEventListener('click', function() {
     document.getElementById('downloadButton').classList.remove('hidden');
 });
 
-function openUrl(buttonNumber) {
+function openUrl(buttonNumber) {    
     const urls = [
-        "https://link-para-imagem1-no-github",
-        "https://link-para-imagem2-no-github",
-        "https://link-para-imagem3-no-github",
-        "https://link-para-imagem4-no-github",
-        "https://link-para-imagem5-no-github"
+        "https://google.com",
+        "https://uol.com.br",
+        "https://https://www.sp.senai.br",
+        "https://linkedin.com",
+        "https://github.com"
     ];
 
     window.open(urls[buttonNumber - 1], '_blank');

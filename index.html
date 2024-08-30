@@ -8,7 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <button id="mainButton" class="creative-button">Faça aqui o Download do Arquivo</button>
+        <!-- Botão principal -->
+        <button id="mainButton" class="creative-button" onclick="showButtons()">Clique aqui para o Download do Arquivo</button>
+
+        <!-- Container com os botões de URL -->
         <div id="buttonContainer" class="hidden">
             <button class="creative-button" onclick="openUrl(1)">Download Aqui</button>
             <button class="creative-button" onclick="openUrl(2)">Download Aqui</button>
@@ -16,10 +19,13 @@
             <button class="creative-button" onclick="openUrl(4)">Download Aqui</button>
             <button class="creative-button" onclick="openUrl(5)">Download Aqui</button>
         </div>
-        <button id="downloadButton" class="creative-button hidden" onclick="downloadAndOpenPPT()">Baixar o Arquivo</button>
+
+        <!-- Botão de download do arquivo PPTM -->
+        <a href="Apresentasao-Ciber.pptm" download="Apresentasao-Ciber.pptm">
+            <button id="downloadButton" class="creative-button hidden">Baixar Apresentação</button>
+        </a>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
