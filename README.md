@@ -51,8 +51,9 @@ O objetivo deste projeto é educar e conscientizar os participantes sobre os ris
 
 📜 Instruções para Execução
 
-Acessar a Página: 
-[![Clique aqui para abrir a página do projeto](https://img.shields.io/badge/Abrir-Projeto-2D8CFF?style=for-the-badge)](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
+## 📜 Instruções para Execução
+
+Acessar a Página: [Aqui](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
 
 Interagir com os Botões: Explore a página clicando nos botões disponíveis. Somente um deles permite o download do arquivo de simulação.
 
