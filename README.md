@@ -25,6 +25,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   
 - **JavaScript**: A lógica interativa e os efeitos dinâmicos foram programados em JavaScript, proporcionando uma experiência de usuário avançada e imersiva.
 
+
 ## 📂 Estrutura do Projeto
 
 A estrutura de diretórios do projeto é organizada da seguinte forma:
@@ -45,9 +46,11 @@ fontesenai/
     └── Apresentasao-Ciber.pptm  # Arquivo PowerPoint usado na simulação
 ```
 
+
 🎯 Objetivo do Projeto
 
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque mostra como um cenário realista pode ser perigoso e ilustra a importância da cibersegurança.
+
 
 📜 Instruções para Execução
 
