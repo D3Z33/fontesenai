@@ -44,22 +44,19 @@ fontesenai/
     ├── 5.jpeg
     └── Apresentasao-Ciber.pptm  # Arquivo PowerPoint usado na simulação
 
-## 🎯 Objetivo do Projeto
+🎯 Objetivo do Projeto
 
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque mostra como um cenário realista pode ser perigoso e ilustra a importância da cibersegurança.
 
-
-## 📜 Instruções para Execução
+📜 Instruções para Execução
 
 Acessar a Página: [Aqui](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
 
 Interagir com os Botões: Explore a página clicando nos botões disponíveis. Somente um deles permite o download do arquivo de simulação.
 
 Download e Execução: Após identificar o botão correto, faça o download do arquivo .pptm e execute-o em seu PowerPoint. Siga as instruções no slide para a simulação completa.
- apresentação para iniciar a simulação.
 
-
-## ⌨️ com ❤️ por [D3Z33] 🧑‍💻
+⌨️ com ❤️ por [D3Z33] 🧑‍💻
 
 ### Explicações:
 
