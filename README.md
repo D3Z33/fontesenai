@@ -1,4 +1,4 @@
-
+<div align="center">
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-327FC7?style=flat-square&logo=github)](https://d3z33.github.io/fontesenai/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
