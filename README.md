@@ -88,7 +88,7 @@ Execução da Macro:
 
 A partir do slide 3 do arquivo PowerPoint, qualquer clique no slide aciona a macro. Isso simula um ataque, causando uma série de ações no sistema, como o movimento descontrolado do mouse, desativação do teclado, abertura de janelas e, por fim, a reinicialização ou desligamento do computador.
 
-## 🎯 Objetivo do Projeto**
+## 🎯 Objetivo do Projeto
 
 O objetivo deste projeto é educar e conscientizar os participantes sobre os riscos de segurança na internet. A simulação de um ataque mostra como um cenário realista pode ser perigoso e ilustra a importância da cibersegurança.
 
