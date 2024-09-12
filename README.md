@@ -88,7 +88,8 @@ O arquivo PowerPoint contém macros VBA que simulam um ataque cibernético. É r
 **Habilitar Macros**:
 
 Após o download, o PowerPoint solicitará que você habilite as macros. É necessário adicionar a pasta onde o arquivo foi salvo como local confiável, caso contrário, as macros não serão executadas.
-Execução da Macro:
+
+**Execução da Macro:**
 
 A partir do slide 3 do arquivo PowerPoint, qualquer clique no slide aciona a macro. Isso simula um ataque, causando uma série de ações no sistema, como o movimento descontrolado do mouse, desativação do teclado, abertura de janelas e, por fim, a reinicialização ou desligamento do computador.
 
